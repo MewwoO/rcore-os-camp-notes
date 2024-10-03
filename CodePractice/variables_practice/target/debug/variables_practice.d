@@ -1,0 +1,1 @@
+/Users/wenhuili/code_space/learn_note/rcore-os-camp-notes/CodePractice/variables_practice/target/debug/variables_practice: /Users/wenhuili/code_space/learn_note/rcore-os-camp-notes/CodePractice/variables_practice/src/main.rs
