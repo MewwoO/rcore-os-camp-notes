@@ -29,3 +29,18 @@
 // fn makes_copy(some_integer: i32) { // some_integer 进入作用域
 //     println!("{}", some_integer);
 // } // 这里，some_integer 移出作用域。不会有特殊操作
+
+// fn main() {
+//     match 1 {
+//         // num @ 1 | 2 => { 编译不通过
+//         // 因为 num 没有绑定到所有的模式上，只绑定了模式 1
+//         // 使用下面这种方式在 Rust 1.53 之前的版本会报错，因为编译器不支持
+//         // 1.53 之后就可以
+// rustc -V
+// rustc 1.81.0 (eeb90cda1 2024-09-04)
+//         num @ (1 | 2) => {
+//             println!("{}", num);
+//         }
+//         _ => {}
+//     }
+// }
