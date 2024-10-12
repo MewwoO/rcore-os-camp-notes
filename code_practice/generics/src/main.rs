@@ -48,8 +48,15 @@
 //     generic(SGen<char>);
 // }
 // 官方答案
+// 定义了一个没有字段的具体类型 A
 // struct A;          // Concrete type `A`.
+// 定义了一个包含单个字段 A 的具体类型 S。
+// 这个字段是匿名的，因为您没有在括号外给它命名。
+// 注意，这种语法是 Rust 早期版本的遗留语法，
+// 现代 Rust 通常使用大括号 {} 和命名字段来定义结构体。
+// 不过，对于只有一个匿名字段的元组结构体，这种语法仍然是有效的。
 // struct S(A);       // Concrete type `S`.
+// 定义了一个泛型类型 SGen<T>，它包含一个类型为 T 的匿名字段
 // struct SGen<T>(T); // Generic type `SGen`.
 // fn reg_fn(_s: S) {}
 // fn gen_spec_t(_s: SGen<A>) {}
